@@ -273,9 +273,20 @@ footer{
   margin-bottom:2rem;
 }
 
-.signoff{
-  padding-left:40vh;
+.signature{
+  margin-left:20vw;
 }
 
+.lltm{
+  text-align: right;
+}
+
+.lltm h2{
+  margin-bottom: 1rem;
+}
+
+.lltm h4{
+  font-family:'Cutive Mono', monospace;
+}
 
 /*---- TESTING use this section to test shit ----*/
