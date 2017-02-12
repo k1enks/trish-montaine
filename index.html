@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: bighead
 title: Trish Montaine
 meta-description: This is a blog written by a solo female traveler focusing on reproductive justice and women's sexual rights around the world.
 ---
@@ -30,69 +30,27 @@ meta-description: This is a blog written by a solo female traveler focusing on r
 <body>
 
 <!-- Title of article; most recent will default on top of first page; one article per page -->
-
+{% for post in site.posts limit:1 %}
   <section class="post">
 
-    <div class="chunk">
+  <div>
 
       <div class="media-one">
-          <img src="images/villy.jpg"> <!-- large vertical image to start post' -->
+          <img src="{{post.image_path}}"> <!-- large vertical image to start post' -->
       </div>
 
-      <div class="chunk grid">
+      <div class="grid">
         <div class="title col-6_sm-12">
-          <h1 class="beta">I should have gotten pregnant in Cuba</h1>
+          <h1 class="beta">{{post.title}}</h1>
+            <p class="post-meta">{{post.date | date_to_string }} | By {{post.author}}</p>
         </div>
-      </div>
 
-      <div class="chunk grid-equalHeight">
-        <div class="content-left col-6_sm-12">
-            <p>
-              <span>At</span> vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-            </p>
-          </div>
-          <div class="content-right col-6_sm-12">
-              <p>
-                <span>At</span> vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
-              </p>
-            </div>
-      </div>
     </div>
 
-    <div class="chunk grid-equalHeight">
-      <div class="media-wide left relative col-6_sm-12 parent">
-        <img src="images/havana-car-sky.jpg"><!-- horizontal image on left side of screen -->
-      </div>
+      {{post.content}}
 
-      <div class="content-right col-6_sm-12">
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</p>
-          <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.<p>
-      </div>
-    </div>
-
-    <div class="chunk grid-equalHeight">
-      <div class="content-left col-6_sm-12">
-        <p>vagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina</p>
-      </div>
-
-      <div class="media-two col-6_sm-12">
-          <img src="images/havana-car-red.jpg">
-      </div>
-    </div>
-
-    <div class="chunk grid-equalHeight">
-      <div class="media-wide left col-6_sm-12">
-        <img src="images/monkey.jpg">
-      </div>
-
-      <div class="content-right col-6_sm-12">
-        <p>vagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina</p>
-
-        <p>vagina vagina vagina vaginavagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vaginavagina vagina vagina vagina vagina vagina vagina vagina</p>
-      </div>
-    </div>
-  </section>
-
+{% endfor %}
+</section>
 <!-- Carousel -->
   <section class="owl">
     <div class="owl-carousel owl-theme">
