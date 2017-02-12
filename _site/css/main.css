@@ -374,3 +374,50 @@ nav a:hover{
 
 
 /*---- TESTING use this section to test shit ----*/
+
+
+.mob-show nav a{
+  padding: 1vw;
+
+}
+/*------- Media Queries ------------------------*/
+@media(max-width:800px) {
+
+  /* --- General Responsive Helpers ----*/
+
+  .mob-hide {
+      display: none!important;
+  }
+  .mob-show {
+    display: block;
+  }
+
+  /* These classes flip the order of the columns on a mobile layout so that we don't have two images touching. Try commenting them out and see the difference */
+  .mob-flip {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+  }
+  .mob-flip div {
+      width: 100%; /* This fixes a flexbox bug */
+  }
+
+  /* ------ General Mobile Styles ---------*/
+  /* This aligns everything to center on mobile, this is purely slylistic, remove or adjust to suit your design */
+  body,
+  .left,
+  .right {
+    text-align: center;
+  }
+  /* This adjusts the padding on all columns, this is purely slylistic, adjust to suit your design. */
+  /* [class*=col-] is a fancy selector that selects everything class that contains col- including col-3, col-4 etc. */
+  .col,
+  [class*=col-] {
+    padding: 1rem;
+  }
+  textarea {
+    margin: 0;
+  }
+
+}/* End media query */
