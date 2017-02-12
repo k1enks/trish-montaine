@@ -273,6 +273,10 @@ footer{
   margin-bottom:2rem;
 }
 
+.caption{
+  text-align: center;
+}
+
 .signature{
   margin-left:20vw;
 }
