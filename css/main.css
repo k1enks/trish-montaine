@@ -342,9 +342,6 @@ nav a:hover{
 .category a:hover{
   text-decoration: line-through;
 }
-.containger{
-
-}
 
 .map{
   text-align: center;
@@ -352,7 +349,21 @@ nav a:hover{
   padding-bottom: 2rem;
 }
 
+.square-crop{
+  width:100%;
+  padding-bottom: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+}
 
+.blog-loop{
+  padding:3rem;
+}
+
+.hidden{
+  display: none;
+}
 /*--- Contact Page ---*/
 
 .contact h2{

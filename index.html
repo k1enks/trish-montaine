@@ -3,34 +3,10 @@ layout: bighead
 title: Trish Montaine
 meta-description: This is a blog written by a solo female traveler focusing on reproductive justice and women's sexual rights around the world.
 ---
-<!DOCTYPE html>
-<html>
-<head>
-  <!-- FONTAWESOME STYLESHEET BELOW -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-
-
-  <!-- google fonts below -->
-<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-
-  <!-- GRIDLEX below here -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.4/gridlex.min.css">
-
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-  <!-- MY stylesheet below -->
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-
-</head>
-
-<body>
 
 <!-- Title of article; most recent will default on top of first page; one article per page -->
-{% for post in site.posts limit:1 %}
+{% for post in paginator.posts limit:1 %}
   <section class="post">
 
   <div>
@@ -69,24 +45,12 @@ meta-description: This is a blog written by a solo female traveler focusing on r
     </div>
   </section>
 
+  <section class="more">
+    <p class="delta">ver más</p>
+    <a href="/past.html"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+  </section>
+
+
+
+
 <!--Bar at bottom that allows you to load a second article on the same page-->
-
-<section class="more">
-  <p class="delta">ver más</p>
-  <a href="LINK TO THE NEXT PAGE AND NEXT ARTICLE"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-</section>
-
-<!-- JAVASCRIPT SHIT BELOW---->
-<!--JQUERY version 1.10.2 -->
-<script src=js/jquery.js></script>
-
-<!--- Owl Carousel -->
-<script src="js/owl.carousel.min.js"></script>
-
-<!--- Smooth scrolling--->
-<script src="js/smooth-scrolling.js"></script>
-
-<script src="js/main.js"></script>
-
-</body>
-</html>
