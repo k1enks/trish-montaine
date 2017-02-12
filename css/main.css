@@ -1,0 +1,232 @@
+/* INDEX  --------------------
+  - CSS RESET
+  - GENERAL HELPER CLASSES
+  - UNIVERSAL STYLES
+  - HEADER & FOOTER
+  - MODULAR ELEMENTS
+    - Element Name
+  - FORMS
+
+---------------------------
+Website Fonts: List fonts here for reference
+Website Colours: List colour hex codes here for reference
+----------------------------
+*/
+
+
+
+/* ---- CSS RESET --------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%; /* This ensures an image never breaks it's container */
+}
+
+[class*=grid-][class*=-equalHeight]>[class*=col] {
+  display:block;
+  /* This overrides a quirk with gridlex where contents inside of equal height containers become columns themselves */
+}
+
+/* Typography */
+body {
+  font-family: 'Cutive Mono', monospace; /* Make sure you have added this font in the head of your HTML! */
+  color: RGBA(33, 26, 29, 1.00);
+  background-color: RGBA(248, 240, 251, 1.00);
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Lato', sans-serif;
+  color: RGBA(33, 26, 29, 1.00);
+}
+
+.logo{
+  font-family:'Lato', sans-serif;
+}
+nav a{
+  text-decoration: none;
+  font-family:'Cutive Mono', monospace;
+  font-weight:extra-light;
+  color:RGBA(33, 26, 29, 1.00);
+  padding:2rem;
+}
+
+nav a:hover{
+  text-decoration: line-through;
+}
+
+nav:hover{
+    background-color: RGBA(38, 109, 211, .38);
+}
+
+.alpha {font-size: 7.0rem; line-height:1;}
+.beta {font-size: 3rem; line-height:1.4;}
+.gamma {font-size: 2rem; line-height:1.5}
+.delta {font-size: 1rem; line-height:1.5}
+.epsilon,p {font-size: 1rem; line-height:1.5}
+
+/* ---- HEADER ------ */
+
+header{
+  min-width:100%;
+  width:100%;
+}
+
+nav{
+    z-index: 100;
+}
+
+.theme{
+  background-color: RGBA(233, 174, 163, 1.00);
+  margin-left:3rem;
+}
+
+
+.head{
+  position:relative;
+  width:100%;
+  height:38rem;
+  z-index:1;
+}
+
+.tagline{
+  padding-bottom: 1rem;
+  font-align: center;
+  font-family: 'Cutive Mono', monospace;
+}
+
+.logo{
+  padding-top:24rem;
+  margin-left: 2rem;
+}
+
+.fixed{
+  position:fixed;
+  right:1rem;
+  padding-top:1rem;
+  z-index: 100;
+}
+
+.parent{
+  position:relative;
+}
+
+/* ---- POSTS -----*/
+
+.media-one{
+  text-align:right;
+  margin-top:-30rem;
+}
+
+.media-one img{
+  width:35vw;
+  height:auto;
+  padding-right:1rem;
+}
+
+.post{
+  margin:0 10px;
+}
+
+.title{
+  max-width:60%;
+  padding:0 3rem 0 5vw;
+}
+
+p span{
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.content-right{
+  padding:0 0 0 20vh;
+}
+
+.content-left{
+  padding:0 3rem 0 5vw;
+}
+
+
+
+/* ----- VIEW MAS ----*/
+
+.chunk{
+  margin-bottom:1rem;
+}
+
+.parent{
+  position:relative;
+}
+
+.overlap{
+  position:absolute;
+  right:-30px;
+  bottom:-30px;
+  width:300px;
+  height:150px;
+}
+
+/* VIEW MORE AT BOTTOM OF PAGE */
+
+.fa-plus-circle {
+  font-size: 3rem;
+  color: #100007;
+  padding: .5rem;
+}
+
+.more {
+  width:100%;
+  padding:.5rem 40% .5rem 40%;
+  text-align: center;
+  background-color: RGBA(233, 174, 163, 1.00);
+  margin:0;
+}
+
+/*--- FOOTER ---*/
+footer{
+  min-width:100%;
+  width:100%;
+  text-align:center;
+  padding:2rem;
+}
+
+.signup{
+  text-align:center;
+  max-width: 30%;
+  margin-left: 35%;
+  margin-right:35%;
+}
+
+.mc-field-group{
+  text-align: center;
+}
+
+/* Photo Slider */
+
+.owl img{
+  top: 500px;
+  left:50%;
+  transform: translateX(~50%);
+  width:500px;
+}
+
+/*--- ABOUT PAGE ---*/
+
+.about{
+  padding:2vw 10vh;
+}
+
+.about h1{
+  margin-bottom:2rem;
+}
+
+.signoff{
+  padding-left:40vh;
+}
+
+
+/*---- TESTING use this section to test shit ----*/
