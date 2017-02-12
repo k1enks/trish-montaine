@@ -314,4 +314,52 @@ nav a:hover{
   font-family:'Cutive Mono', monospace;
 }
 
+/*-- Archive Page --*/
+
+.archive h1{
+  display: none;
+}
+
+.archive{
+  width:100%;
+  padding-left: 6rem;
+  padding-right: 5vw;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.category{
+  font-family:'Cutive Mono', monospace;
+
+}
+
+.category a{
+  display:block;
+  text-align: left;
+  text-decoration: none;
+  color: RGBA(33, 26, 29, 1.00);
+}
+
+.category a:hover{
+  text-decoration: line-through;
+}
+.containger{
+
+}
+
+.map{
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 2rem;
+}
+
+
+/*--- Contact Page ---*/
+
+.contact h2{
+    font-family:'Cutive Mono', monospace;
+}
+
+
+
+
 /*---- TESTING use this section to test shit ----*/

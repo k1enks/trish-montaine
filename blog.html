@@ -7,7 +7,7 @@ title: Blog
   <h1 class="centered"> Blog </h1>
 
   <div class="grid blog-loop">
-    {% for post in site.posts limit:6 %}
+    {% for post in site.posts limit: %}
       <div class="col-4_sm-12">
           <a href="{{post.url}}">
             <img src="{{post.image_path}}"> <!-- for consistent image sizes you will either need to crop the images beforehand or change this to divs with background images -->
@@ -25,7 +25,7 @@ title: Blog
   <h2 class="centered"> Travel Category Posts </h2>
 
   <div class="grid blog-loop">
-    {% for post in site.categories.travel  limit:3 %}
+    {% for post in site.categories.travel  limit:2 %}
     <div class="col-4_sm-12">
         <a href="{{post.url}}">
           <img src="{{post.image_path}}"> <!-- for consistent image sizes you will either need to crop the images beforehand or change this to divs with background images -->

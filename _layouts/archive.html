@@ -3,11 +3,11 @@ layout: default
 ---
 
 
-<section class="container">
-  <h1 class="centered"> Archive of posts with {{ page.type }} '{{ page.title }}{{ page.date | date: "%Y" }}' </h1>
+<section class="title">
+  <h1> Posts with {{ page.type }} '{{ page.title }}{{ page.date | date: "%Y" }}' </h1>
 
   <div class="grid blog-loop">
-    {% for post in page.posts limit:6 %}
+    {% for post in page.posts %}
       <div class="col-4_sm-12">
           <a href="{{post.url}}">
             <img src="{{post.image_path}}"> <!-- for consistent image sizes you will either need to crop the images beforehand or change this to divs with background images -->

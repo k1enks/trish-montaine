@@ -3,5 +3,45 @@ layout: default
 title: TM Archive
 meta-description:
 ---
+<h1 class="archive">Archived Posts</h1>
 
-TEST TEST
+
+<section class="archive grid-equalHeight">
+  <div class="category col-4_sm-12">
+    <h2 class="delta">Topic</h2>
+    <div class="delta">
+    {% for category in site.categories limit:6 %}
+      <a href ="/category/{{category | first}}" class="category"> {{category | first}} </a>
+    {% endfor %}
+    </div>
+    <div class="delta">
+    {% for category in site.categories limit:6 offset:6 %}
+      <a href ="/category/{{category | first}}" class="category"> {{category | first}} </a>
+    {% endfor %}
+    </div>
+  </div>
+
+  <div class="category col-4_sm-12">
+    <h2 class="delta">Location</h2>
+    <div class="delta">
+    {% for tag in site.tags limit:6 %}
+      <a href ="/tag/{{tag | first}}" class="tag"> {{tag | first}} </a>
+    {% endfor %}
+    </div>
+  </div>
+
+  <div class="category col-4_sm-12">
+    <h2 class="delta">Month</h2>
+    <div class="delta">
+    {% for month in site.month limit:6 %}
+      <a href ="/month/{{month | first}}" class="month"> {{month | first}} </a>
+    {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="map">
+  <img src="images/map.png">
+</section>
+
+{% include instagram.html %}
