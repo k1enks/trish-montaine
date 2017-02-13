@@ -58,6 +58,17 @@ nav a:hover{
   text-decoration: line-through;
 }
 
+a{
+  text-decoration: none;
+  font-family:'Cutive Mono', monospace;
+  font-weight:extra-light;
+  color:RGBA(33, 26, 29, 1.00);
+}
+
+a:hover{
+  text-decoration: line-through;
+}
+
 
 .alpha {font-size: 7.0rem; line-height:1;}
 .beta {font-size: 3rem; line-height:1.4;}
@@ -140,6 +151,10 @@ nav{
 
 /* ---- POSTS -----*/
 
+.chunk p{
+  padding-top:2rem;
+}
+
 .media-one{
   text-align:right;
   margin-top:-30rem;
@@ -151,8 +166,21 @@ nav{
   padding-right:1rem;
 }
 
+.media-center{
+  width:100%;
+  text-align: center;
+  padding-left: 20%;
+  padding-right:20%;
+}
 
+.media-center h3{
+  font-family: 'Cutive Mono', monospace;
+  padding-top:1rem;
+}
 
+.media-center h2{
+  padding-bottom:2rem;
+}
 .title{
   max-width:60%;
   padding:0 0 0 6rem;
@@ -160,8 +188,7 @@ nav{
 
 p span{
   text-transform: capitalize;
-  text-decoration: underline;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .content-right{
