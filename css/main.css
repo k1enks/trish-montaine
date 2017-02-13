@@ -58,9 +58,6 @@ nav a:hover{
   text-decoration: line-through;
 }
 
-nav:hover{
-    background-color: RGBA(38, 109, 211, .38);
-}
 
 .alpha {font-size: 7.0rem; line-height:1;}
 .beta {font-size: 3rem; line-height:1.4;}
