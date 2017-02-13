@@ -103,6 +103,11 @@ nav{
   z-index:1;
 }
 
+.index-mob {
+  background-color: RGBA(233, 174, 163, 1.00);
+
+}
+
 .tagline{
   padding-bottom: 1rem;
   font-align: center;
@@ -364,6 +369,10 @@ nav a:hover{
 .hidden{
   display: none;
 }
+
+.post-head{
+  padding-top:3rem;
+}
 /*--- Contact Page ---*/
 
 .contact h2{
@@ -381,6 +390,15 @@ nav a:hover{
 
 }
 /*------- Media Queries ------------------------*/
+@media(min-width:801px) {
+
+.mob-show {
+  display:none;
+}
+
+}
+
+
 @media(max-width:800px) {
 
   /* --- General Responsive Helpers ----*/
