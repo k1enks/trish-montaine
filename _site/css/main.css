@@ -258,6 +258,12 @@ figcaption{
   width: 100%;
 }
 
+#disclaimer{
+  max-width:100%;
+  padding: 0 10vw 0 10vw;
+  position: relative;
+}
+
 /* ----- VIEW MAS ----*/
 
 .chunk{
