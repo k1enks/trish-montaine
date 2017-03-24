@@ -460,7 +460,25 @@ nav a:hover{
 
 }
 
+@media(max-width:1100px){
+  .alpha{
+    display:none;
+  }
+  .content-default{
+    padding:2%;
+    text-align: center;
+  }
 
+  .content-default-right{
+    padding:2%;
+    text-align: center;
+  }
+
+  .media-center{
+    width:100%;
+    padding:1%;;
+  }
+}
 
 @media(max-width:800px) {
 
