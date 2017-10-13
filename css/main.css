@@ -35,7 +35,7 @@ img {
 body {
   font-family: 'Cutive Mono', monospace; /* Make sure you have added this font in the head of your HTML! */
   color: #13070C;
-  background-color: #EFF9F0;
+  background-color: #FFFFFF;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -91,12 +91,12 @@ nav{
 }
 
 .index{
-  background-color:#DDC8C4;
+  background-color:RGBA(255, 127, 90, 1.00);
   margin-left:3rem;
 }
 
 .site{
-  background-color: #DDC8C4;
+  background-color: RGBA(255, 127, 90, 1.00);
   margin-left:3rem;
 }
 
@@ -115,7 +115,7 @@ nav{
 }
 
 .index-mob {
-  background-color: #DDC8C4;
+  background-color: RGBA(255, 127, 90, 1.00);
 
 }
 
@@ -230,7 +230,7 @@ p span{
   top: 0;
   left: 0;
   width: 70%;
-  background: #DDC8C4;
+  background: RGBA(255, 127, 90, 1.00);
   height: 50%;
   z-index: -10;
 }
@@ -241,7 +241,7 @@ p span{
   top: 0;
   right: 0;
   width: 70%;
-  background: #DDC8C4;
+  background: RGBA(255, 127, 90, 1.00);
   height: 50%;
   z-index: -10;
 }
@@ -301,7 +301,7 @@ figcaption{
   width:100%;
   padding:.5rem 40% .5rem 40%;
   text-align: center;
-  background-color: #DDC8C4;
+  background-color: RGBA(255, 127, 90, 1.00);
   margin:0;
 }
 
@@ -313,7 +313,7 @@ footer{
 }
 
 .site-foot{
-  background-color: #DDC8C4;
+  background-color: RGBA(255, 127, 90, 1.00);
   min-width: 100%;
   width: 100%;
   height: 6rem;
