@@ -6,24 +6,24 @@ $(document).ready( function(){
 
   //Owl Carousel
 
-  $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:false,
-      dots:false,
-      autoplay:true,
-      slideBy:1,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:3
-          },
-          1000:{
-              items:5
-          }
-      }
+  //$('.owl-carousel').owlCarousel({
+  //    loop:true,
+    //  margin:10,
+      //nav:false,
+      //dots:false,
+      //autoplay:true,
+      //slideBy:1,
+      //responsive:{
+        //  0:{
+          //    items:1
+        //  },
+          //600:{
+            //  items:3
+      //    },
+        //  1000:{
+          //    items:5
+        //  }
+    //  }
 
 
   })
